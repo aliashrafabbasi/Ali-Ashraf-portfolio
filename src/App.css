@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  margin: 0 auto 2rem;
+  max-width: 1000px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section (FULL SCREEN ALWAYS) */
+.hero-section {
+  height: 100vh;               /* FULL SCREEN */
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;     /* CENTER VERTICALLY */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e6f0ff 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 5px;
+}
+
+.typing-dot {
+  width: 10px;
+  height: 10px;
+  background: #007bff;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
+}
+
+/* Projects */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 4px solid #007bff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-links a {
+  margin-right: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* Socials */
+.socials a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #111;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  color: #007bff;
+}
+
+/* Responsive Navigation */
+@media(max-width:768px){
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid #ddd;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links.open { display: flex; }
+
+  .hamburger { display: block; }
+
+  .hero-section {
+    height: 100vh; /* STILL FULL SCREEN */
+    padding: 2rem;
   }
+}
+
+/* Navbar Logo */
+.logo {
+  font-size: 1.6rem;       /* Bigger size */
+  font-weight: 700;        /* Bold and premium */
+  letter-spacing: 1px;     /* Slight spacing for clean look */
+  color: #007bff;          /* Matches your theme blue */
+  cursor: default;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  color: #0056cc;          /* Slight darker hover */
+  transform: scale(1.05);  /* Subtle zoom (not too flashy) */
+}
+
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
