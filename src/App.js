@@ -73,44 +73,44 @@ const HeroSection = () => (
 
 // About Section
 const About = () => (
-<motion.section
-  id="about"
-  className="section neon-border"
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
->
-  <h2>About Me</h2>
-  <p>
-    I’m a passionate and detail-oriented <strong>Generative AI & Backend Developer</strong>, with <strong>Python</strong> as my core language.
-  </p>
+  <motion.section
+    id="about"
+    className="section neon-border"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate and detail-oriented <strong>Generative AI & Backend Developer</strong>, with <strong>Python</strong> as my core language.
+    </p>
 
-  <p>I have hands-on experience in:</p>
-  <ul>
-    <li>Developing <strong>Generative AI applications</strong> using <strong>LangChain</strong> and <strong>LLMs</strong> (Groq, OpenAI, Claude, etc.).</li>
-    <li>Building and managing <strong>REST APIs</strong> with <strong>FastAPI & Pydantic</strong>.</li>
-    <li>Handling <strong>data and AI workflows</strong> efficiently.</li>
-  </ul>
+    <p>I have hands-on experience in:</p>
+    <ul>
+      <li>Developing <strong>Generative AI applications</strong> using <strong>LangChain</strong> and <strong>LLMs</strong> (Groq, OpenAI, Claude, etc.).</li>
+      <li>Building and managing <strong>REST APIs</strong> with <strong>FastAPI & Pydantic</strong>.</li>
+      <li>Handling <strong>data and AI workflows</strong> efficiently.</li>
+    </ul>
 
-  <p>
-    Alongside AI, I also develop dynamic web applications using <strong>Laravel, PHP, and JavaScript</strong>, styled with <strong>Tailwind CSS & Bootstrap</strong>.
-  </p>
+    <p>
+      Alongside AI, I also develop dynamic web applications using <strong>Laravel, PHP, and JavaScript</strong>, styled with <strong>Tailwind CSS & Bootstrap</strong>.
+    </p>
 
-  <ul>
-    <li>🔹 I specialize in creating <strong>efficient backends, smart AI solutions, and seamless API integrations</strong>.</li>
-    <li>🔹 I’m always learning and exploring <strong>new tools, frameworks, and technologies</strong> in the AI and software development space.</li>
-  </ul>
+    <ul>
+      <li>🔹 I specialize in creating <strong>efficient backends, smart AI solutions, and seamless API integrations</strong>.</li>
+      <li>🔹 I’m always learning and exploring <strong>new tools, frameworks, and technologies</strong> in the AI and software development space.</li>
+    </ul>
 
-  <p>
-    🚀 Let’s connect to discuss innovative ideas and opportunities in <strong>Generative AI, backend development, and automation</strong>!
-  </p>
+    <p>
+      🚀 Let’s connect to discuss innovative ideas and opportunities in <strong>Generative AI, backend development, and automation</strong>!
+    </p>
 
-  <p>Previous experience:</p>
-  <ul>
-    <li>4 months at <strong>Corex International</strong> as Social Media Marketing Intern</li>
-    <li>3 months at <strong>Infinite Marketing Solutions</strong>, promoting travel services</li>
-  </ul>
-</motion.section>
+    <p>Previous experience:</p>
+    <ul>
+      <li>4 months at <strong>Corex International</strong> as Social Media Marketing Intern</li>
+      <li>3 months at <strong>Infinite Marketing Solutions</strong>, promoting travel services</li>
+    </ul>
+  </motion.section>
 
 );
 
