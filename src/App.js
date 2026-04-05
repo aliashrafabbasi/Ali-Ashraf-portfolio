@@ -59,6 +59,7 @@ const HeroSection = () => (
           "LangChain ",
           " Groq | Open AI | Claude",
           "FastAPI | Python",
+          "Postgresql/MongoDB",
           "Full Stack Developer",
 
         ]}
