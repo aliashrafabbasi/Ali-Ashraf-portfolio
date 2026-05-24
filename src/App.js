@@ -452,7 +452,7 @@ const Projects = () => {
       description:
         "Ask questions about your PDFs — powered by retrieval-augmented generation.Upload a document, embed its contents into a vector index, and get grounded answers from an LLM using only what’s in the file.",
       tags: ["FastAPI", "Python", "FAISS","Vector search","Groq:llama3.3"],
-      live: null,
+      live: "https://rag-chat-application.netlify.app/",
       github: "https://github.com/aliashrafabbasi/rag-chatbot",
       
     },
