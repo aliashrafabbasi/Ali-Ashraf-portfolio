@@ -263,7 +263,7 @@ const HeroSection = () => (
         </div>
         <div className="hero-stat-divider" aria-hidden="true" />
         <div className="hero-stat">
-          <span className="hero-stat-value">4</span>
+          <span className="hero-stat-value">5</span>
           <span className="hero-stat-label">AI Projects</span>
         </div>
         <div className="hero-stat-divider" aria-hidden="true" />
@@ -446,6 +446,15 @@ const Projects = () => {
       live: null,
       github: "https://github.com/aliashrafabbasi/LYRA-AI-BOT-Backend",
       comingSoon: true,
+    },
+    {
+      name: "RAG-Chat-Application",
+      description:
+        "Ask questions about your PDFs — powered by retrieval-augmented generation.Upload a document, embed its contents into a vector index, and get grounded answers from an LLM using only what’s in the file.",
+      tags: ["FastAPI", "Python", "FAISS","Vector search","Groq:llama3.3"],
+      live: null,
+      github: "https://github.com/aliashrafabbasi/rag-chatbot",
+      
     },
   ];
 
