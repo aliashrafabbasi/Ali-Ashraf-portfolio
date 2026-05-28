@@ -263,7 +263,7 @@ const HeroSection = () => (
         </div>
         <div className="hero-stat-divider" aria-hidden="true" />
         <div className="hero-stat">
-          <span className="hero-stat-value">5</span>
+          <span className="hero-stat-value">6</span>
           <span className="hero-stat-label">AI Projects</span>
         </div>
         <div className="hero-stat-divider" aria-hidden="true" />
@@ -455,6 +455,14 @@ const Projects = () => {
       live: "https://rag-chat-application.netlify.app/",
       github: "https://github.com/aliashrafabbasi/rag-chatbot",
       
+    },
+    {
+      name: "AI Resume Screener",
+      description:
+        "An AI-powered resume screener that turns CVs into instant hiring insights — match score, skills analysis, and smart recommendations.",
+      tags: ["FastAPI", "Python", "Groq", "Sentence Transformers", "Scikit-learn", "NumPy", "REST API", "Docker", "pypdf", "Netlify"],
+      live: "https://hirelens-ai-app.netlify.app",
+      github: "https://github.com/aliashrafabbasi/ai-resume-screener",
     },
   ];
 
